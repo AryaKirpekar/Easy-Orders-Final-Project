@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="forms.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+
+
+	<!-- drop down calendar -->
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({ minDate: 0 });
+  } );
+  </script>
+
+  
+	<!-- drop down month and year for payment info -->
+
+
+
+</head>
+
+<body>
+  <br> 
+  <br>
+	<nav class="nav-bar">
+		<article class="home">
+			<a href="index.html">Home</a>
+		</article>
+		<article class="stores">
+			<a href="stores.html">Stores</a>
+		</article>
+		<article class="form">
+			<a href="forms.html">Form</a>
+		</article>
+		<article class="about us">
+			<a href="about.html">About Us</a>
+		</article>
+	</nav>
+
+  <br>
+	<div class="form">
+
+    <!-- drop down stores selector -->
+    <center><select id="stores" name="stores">
+      <option value="adidias">Adidas</option>
+      <option value="aldi">Aldi</option>
+      <option value="barnesAndNoble">Barnes and Noble</option>
+      <option value="bassProShops">Bass Pro Shops</option>
+      <option value="bathAndBodyWorks">Bath and Body Works</option>
+      <option value="bedBathAndBeyond">Bed, Bath & Beyond</option>
+      <option value="bestBuy">Best Buy</option>
+      <option value="BJs">BJs</option>
+      <option value="burlington">Burlington</option>
+      <option value="costco">Costco</option>
+      <optiul value="dicks">Dick's</option>
+      <option value="gap">Gap</option>
+      <option value="giant">Giant</option>
+      <option value="hobbyLobby">Hobby Lobby</option>
+      <option value="homeDepot">Home Depot</option>
+      <option value="ikea">IKEA</option>
+      <option value="jcpenny">JCPenny</option>
+      <option value="joannFabric">Joann Fabric</option>
+      <option value="kohls">Kohl's</option>
+      <option value="lowes">Lowe's</option>
+      <option value="macys">Macy's</option>
+      <option value="michaels">Michael's</option>
+      <option value="nike">Nike</option>
+      <option value="nordstromRack">Nordstrom Rack</option>
+      <option value="petSmart">Pet Smart </option>
+      <option value="publix">Publix</option>
+      <option value="safeway">Safeway</option>
+      <option value="samsClub">Sam's Club</option>
+      <option value="sears">Sears</option>
+      <option value="sephora">Sephora</option>
+      <option value="staples">Staples</option>
+      <option value="target">Target</option>
+      <option value="underArmour">Under Armour</option>
+      <option value="walmart">Walmart</option>
+      <option value="wegmans">Wegman's</option>
+      <option value="wholeFoods">Whole Foods</option>
+    </select>
+
+
+		<form>
+			<!-- sections for the user to order products-->
+			<center><div class="orderInfo">
+				<div class="rightDiv">
+					<center><div class="orderBox">
+						<form>
+							<center><label>Order:
+              <input type="text" class="order input">
+            </label>
+            <input class="addToList input" type="submit" value="Add to List">
+          </form>
+          <p>Click on item to remove from list.</p>
+          <ul class="orderList" id="myList">
+          </ul>
+        </div>
+
+        <!-- date and time selector  -->
+        <label>Please select a date and time for pick up:
+          <label>Date:
+            <input type="text" class="input" id="datepicker">
+          </label>
+          <label>Time:
+            <input type="text" name="timepicker" class="timepicker input"/>
+          </label>
+        </label>
+
+        <div class="paymentInfo"> 
+          <p>Payment Information:</p>
+          <label class="text">Name:
+            <input type="text" class="input">
+          </label>
+          <br>
+          <label class="text">Credit Card Number:
+            <input type:"text" class="input">
+          </label>
+          <br>
+          <label class="text" for="quantity">Expiration Date:
+            <input type="number" id="quantity" name="quantity" min="1" max="12" class="input">
+            <input type="number" id="quantity" name="quantity" min="2020" max="2040" class="input">
+          </label>
+          <br>
+          <label class="text">Security Code:
+            <input type="password" class="input">
+          </label>
+          <p>Billing Address:</p>
+          <label class="text">Address Line 1:
+            <input type="text" class="input">
+          </label>
+          <br>
+          <label class="text">Address Line 2:
+            <input type="text" class="input">
+          </label>
+          <br>
+          <label class="text">City:
+            <input type="text" class="input">
+          </label>
+          <br>
+          <label class="text">State:
+            <input type="text" class="input">
+          </label>
+          <br>
+          <label class="text">Zip Code:
+            <input type="text" class="input">
+						<br>
+						<center><input class="checkOutButton input" type="submit" value="Check Out">
+						<br>
+      </form>
+    </div>
+        
+  <!--checkout button -->
+      
+    </div>
+    <center><section class="thankYou">
+      
+    </section>
+    
+    <!-- section for user's favorites -->
+    <!-- <div class="favoritesBox">
+      <form>
+        <label>Favorites:
+         <input type="text" class="favorites">
+        </label>
+        <input class="submitButton" type="submit" value="Add to List">
+      </form>
+      <      </ul>
+    </div> -->
+
+               <input type="password" class="form-control" id="password2" value="">
+                    </div>
+                </div>
+            </div><!--right side -->
+        </div><!-- form for teacher/student-->
+    </form> 
+</div>
+
+
+    <center><a href ="index.html">Back to Home</a>
+    <script src="forms.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!-- jquery link for timepicker -->
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="wickedpicker.js"></script>
+  </body>
+  </html>

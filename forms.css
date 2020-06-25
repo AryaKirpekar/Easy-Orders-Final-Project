@@ -1,0 +1,101 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: navy;
+  color:white;
+  /* FYI: right now the background on your body and nav bar are slighly different. Not sure if they're supposed to match or not! */
+}
+
+* {
+  /* background-color: rgb(7, 7, 83); */
+  /* deleting this background color fixes the background of the text, but also takes away the background color so still a work in provress */
+}
+
+.orderBox {
+  border: 1px solid green;
+  width:75%;
+  text-align:center;
+  
+}
+.order {
+  border:1px solid white;
+}
+.checkOut {
+  border: 1px solid green;
+  width:75%;
+  height:75%;
+  background-color:navy;
+}
+.date {
+  border: 1px solid white;
+}
+.time {
+  border: 1px solid white;
+}
+.dateTime {
+   border: 1px solid green;
+  text-align:center;
+  width:75%;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  background-color: navy;
+  padding: 1%;
+  border-radius: 10px;
+  width:65.5%;
+  margin: auto;
+  border-style: double;
+  border-color:  rgb(117, 199, 117)    ;
+  border-width: 10px;
+  border-height: 15px;
+  color:white;
+}
+article{
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #5FBC57;
+  color: white;
+}
+
+article :hover{
+  background-color: white;
+  color: #5FBC57; 
+  border-radius: 5px;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  /* text-align: center; */
+}
+
+label{
+    width: 250px;
+    text-align: left;
+}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.paymentInfo {
+border: 1px solid green;
+  width:75%;
+}
+
+a {
+  color:white;
+}
+
+.orderList {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: middle;
+}

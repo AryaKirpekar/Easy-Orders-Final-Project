@@ -1,0 +1,139 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 3em;
+  background-color: navy;
+  color: white;
+  
+}
+.change-me{
+  animation: change 5s infinite; 
+}
+
+@keyframes change {
+  0%{
+    background-color: navy ;
+  }
+  50%{
+   background-color: rgb(75, 190, 75);;
+  }
+  100%{
+   background-color:navy;
+  
+  }
+}
+  
+
+h2 {
+  font-size:20px;
+}
+img {   
+   width: 120px; 
+   height:70px;  
+   border-style: double;
+ border-color:  rgb(117, 199, 117)    ;
+  object-fit:cover; 
+  border-width: 15px; 
+  /* display:flex;
+  flex-wrap: wrap;  */
+}
+.image{   
+ object-fit: cover;
+ width: 140px;
+  height: 90px;
+  border-width: 15px;
+ border-color: #5FBC57;
+ /* display:flex;
+ flex-wrap:wrap;  */
+}
+.TextWrap {
+  float:right; 
+  margin: 10px; 
+}
+a {
+  color: white;
+}
+
+.sloganContainer{
+  display: flex;
+  justify-content: center;
+   flex-wrap: wrap; 
+}
+
+.sloganImage {
+  display:flex; 
+  border-style: double;
+  border-color:  lightgreen ;
+  flex-wrap: wrap; 
+  width: 300px;
+  height: 200px ;
+}
+.row0 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center; 
+  flex-wrap:wrap; 
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center; 
+  flex-wrap:wrap;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center; 
+  flex-wrap:wrap;
+}
+.row3 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center; 
+  flex-wrap:wrap;
+}
+.row4 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.row5 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  background-color: navy;
+  padding: 1%;
+  border-radius: 10px;
+  width:70%;
+  margin: auto;
+  border-style: double;
+  border-color:  rgb(117, 199, 117)    ;
+  border-width: 10px;
+  border-height: 15px;
+}
+
+article{
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #5FBC57;
+  color: white;
+}
+
+article :hover{
+  background-color: white;
+  color: #5FBC57; 
+  border-radius: 5px;
+}
